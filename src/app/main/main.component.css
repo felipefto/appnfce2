@@ -1,0 +1,64 @@
+.tile{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    background-size:200px 200px;
+}
+.caption{
+    background-color: rgba(50,50,50,0.4);
+    overflow: hidden;
+    color: #fff;
+    font-weight: bold;
+    margin: 150px 0px 0px 0px;
+    height: 200px;
+    width: 200px;
+}
+.caption:hover {
+    transition: margin .5s;
+    margin: 0px 0px 20px 0px;
+    background-color: rgba(50,50,50,0.4);
+    cursor: pointer;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 25px;
+    margin-top: 25px;
+    
+    height: 100% !important;
+    
+  }
+  
+  /* Custom page CSS
+  -------------------------------------------------- */
+  /* Not required for template or sticky footer method. */
+  
+  body > .container {
+    padding: 25px 15px 0;
+    height: 100%;
+  }
+  
+  body > .container-fluid {
+    padding: 25px 15px 0;
+  }
+  
+  code {
+    font-size: 80%;
+  }
+
+  .fill { 
+    
+    height: calc(100vh - 105px);
+ 
+}

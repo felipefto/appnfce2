@@ -1,0 +1,67 @@
+<!--nav class="navbar navbar-expand-lg navbar-dark special-color mb-4">
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+      <li class="nav-item">
+          <a href="javascript:" (click)="restore()"  class="fa fa-window-minimize"></a>          
+      </li>  
+      <li class="nav-item">
+          <a href="javascript:" (click)="restore()"  class="fa fa-window-restore"></a>
+      </li> 
+      <li class="nav-item">
+          <a href="javascript:" (click)="signout()"  class="fa fa-window-close red-text"></a>
+      </li>       
+    </ul>
+  </div>
+</nav-->
+
+<mat-toolbar  color='primary' role="header">
+    <span>Milium NFC-e</span>
+    
+    
+    <div class="flex-1"></div>
+    <div class="button-row">
+        <button mat-button (click)="novaVenda()" style="background-color: cornflowerblue" >      
+            <span>
+              <mat-icon class="fa fa-cart-plus" style="font-size: 18px"></mat-icon>
+              <span style="font-size: 15px">
+                  Iniciar Venda
+              </span>  
+            </span>
+          </button>  
+          
+          <button mat-button (click)="pesquisa()" >
+              <span>
+                  <mat-icon class="fa fa-search" style="font-size: 18px"></mat-icon>
+                  <span style="font-size: 15px">
+                      Pesquisar
+                  </span>  
+                </span>
+            
+          </button>    
+          
+          <button mat-icon-button  (click)="help()">
+            <mat-icon  style="font-size: 18px" class="fa fa-question-circle"></mat-icon>
+          </button>   
+          
+          <button mat-icon-button [matMenuTriggerFor]="menu" >
+              <mat-icon class="fa fa-ellipsis-v" ></mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>
+                <mat-icon class="fa fa-bell"></mat-icon>
+                <span>Notificações</span>
+              </button>
+              <button mat-menu-item>
+                <mat-icon class="fa fa-cogs"></mat-icon>
+                <span>Configurações</span>
+              </button>
+              <button mat-menu-item (click)="changeUser()">
+                <mat-icon class="fa fa-sign-out"></mat-icon>
+                <span>Trocar Usuário</span>
+              </button>
+            </mat-menu>
+
+
+    </div>
+    
+</mat-toolbar>

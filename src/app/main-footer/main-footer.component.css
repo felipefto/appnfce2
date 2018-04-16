@@ -1,0 +1,23 @@
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 25px;
+    line-height: 25px; /* Vertically center the text there */    
+    background-color: #3f51b5
+  }
+
+  
+  .footer > .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 11px;
+  }
+  
+  .footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 10px;
+  }

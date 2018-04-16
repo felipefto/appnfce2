@@ -1,0 +1,27 @@
+/*
+  .header {
+    height: 25px;
+    line-height: 25px; /* Vertically center the text there 
+    
+  }
+
+  .bg-dark-header{
+    background-color:  #4E5D6C;
+  }
+  
+  .header > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    
+  }
+  
+  .header > .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    
+  }
+
+  */
+  button:focus{
+    outline: none !important
+  }
